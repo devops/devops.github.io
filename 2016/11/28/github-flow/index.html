@@ -76,7 +76,12 @@
 <li>与master分支合并后立刻部署</li>
 </ol>
 <h3 id="随时部署，没有发布的概念"><a href="#随时部署，没有发布的概念" class="headerlink" title="随时部署，没有发布的概念"></a>随时部署，没有发布的概念</h3><p>这个流程必须遵守 “令master分支随时保持可以部署的状态” 这一规则。<br>没有进行过测试或者测试未通过的代码绝不可以合并到master分支。</p>
-<h3 id="进行新的作业时要从master分支创建新分支"><a href="#进行新的作业时要从master分支创建新分支" class="headerlink" title="进行新的作业时要从master分支创建新分支"></a>进行新的作业时要从master分支创建新分支</h3>
+<h3 id="进行新的作业时要从master分支创建新分支"><a href="#进行新的作业时要从master分支创建新分支" class="headerlink" title="进行新的作业时要从master分支创建新分支"></a>进行新的作业时要从master分支创建新分支</h3><p>进行新的作业时要从master分支创建新分支，无论是添加新功能还是修复BUG都是如此。此外，新分支的名称要具有描述性。</p>
+<h3 id="在新创建的分支中进行提交"><a href="#在新创建的分支中进行提交" class="headerlink" title="在新创建的分支中进行提交"></a>在新创建的分支中进行提交</h3><p>修改代码时要注意，绝对不能进行与该分支工作内容无关的修改。<br>设计提交的粒度，有意识的减小提交的规模，一方面便于清楚地表达目的，另一方面有助于其他开发者对Pull Request进行审查</p>
+<h3 id="定期push"><a href="#定期push" class="headerlink" title="定期push"></a>定期push</h3><p>在开发过程中，定期将本地仓库中创建的分支以同名形式push到GitHub端的远程仓库</p>
+<h3 id="使用Pull-Request"><a href="#使用Pull-Request" class="headerlink" title="使用Pull Request"></a>使用Pull Request</h3><p>Pull Request不一定非要在于master分支合并时才使用。既然是团队开发，完全可以尽早创建Pull Request让其他开发者进行审查，<br>一边听取反馈一边编写代码，没必要等到与master分支合并时再进行。</p>
+<h3 id="务必让其他开发者进行审查"><a href="#务必让其他开发者进行审查" class="headerlink" title="务必让其他开发者进行审查"></a>务必让其他开发者进行审查</h3><h3 id="合并后立刻部署"><a href="#合并后立刻部署" class="headerlink" title="合并后立刻部署"></a>合并后立刻部署</h3><p>代码合并至master分支并且通过所有自动化测试之后，需要立即进行部署(预部署或是生产环境)。<br>在部署之后，需要确认刚刚合并的代码是否存在问题。</p>
+
       
     </div>
     <footer>
